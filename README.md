@@ -72,6 +72,27 @@ password:Youve_G0t_Mail!
 
 Bingo now you own the user
 
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/24206178/154683068-e2839697-8555-4b2a-a981-bba6d3b00cb4.png)
+
+![image](https://user-images.githubusercontent.com/24206178/154683088-728f53c3-00e9-4481-90e4-cff84eadd594.png)
+
+![image](https://user-images.githubusercontent.com/24206178/154683116-3bf0159f-2054-477b-a41f-8c1fb7cbee92.png)
+
+![image](https://user-images.githubusercontent.com/24206178/154683152-fe35883b-f604-4f95-b4fd-bc991fe42882.png)
+
+![image](https://user-images.githubusercontent.com/24206178/154683083-cc581f88-1a42-4c8e-b06a-b9610df0842d.png)
+
+![image](https://user-images.githubusercontent.com/24206178/154683238-36592571-85da-451f-9f0f-4a6217dbaeee.png)
+
+![image](https://user-images.githubusercontent.com/24206178/154683243-1334f5d2-6933-42a5-a199-0b8d9774cada.png)
+
+![image](https://user-images.githubusercontent.com/24206178/154683255-dca2c774-cddd-489c-a6be-de2c13e05021.png)
+
+![image](https://user-images.githubusercontent.com/24206178/154683248-09cc9c19-958f-41a2-a8ad-7f04d2a7ed49.png)
+
+
 # Root
 
 #now we are using maildeliverer
@@ -202,3 +223,12 @@ root@Delivery:/home/maildeliverer# whoami
 root
 
 cat /root/root.txt
+
+# Screenshots
+
+![image](https://user-images.githubusercontent.com/24206178/154683335-7f37ccdc-2812-4fbd-a820-39e0bdf5aa3a.png)
+
+![image](https://user-images.githubusercontent.com/24206178/154683355-bd69b018-50c7-46c3-8a77-cb924a549b42.png)
+
+![image](https://user-images.githubusercontent.com/24206178/154683372-149490c0-7e9b-4353-b597-4a515a833451.png)
+
