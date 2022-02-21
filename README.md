@@ -76,10 +76,6 @@ Bingo now you own the user
 
 ![image](https://user-images.githubusercontent.com/24206178/154683068-e2839697-8555-4b2a-a981-bba6d3b00cb4.png)
 
-![image](https://user-images.githubusercontent.com/24206178/154683088-728f53c3-00e9-4481-90e4-cff84eadd594.png)
-
-![image](https://user-images.githubusercontent.com/24206178/154683116-3bf0159f-2054-477b-a41f-8c1fb7cbee92.png)
-
 ![image](https://user-images.githubusercontent.com/24206178/154683152-fe35883b-f604-4f95-b4fd-bc991fe42882.png)
 
 ![image](https://user-images.githubusercontent.com/24206178/154683083-cc581f88-1a42-4c8e-b06a-b9610df0842d.png)
